@@ -1,0 +1,4 @@
+Flask
+pandas
+sentence-transformers
+neo4j

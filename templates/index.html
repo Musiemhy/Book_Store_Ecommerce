@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Store Ecommerce</title>
+    <link rel="stylesheet" href="/static/css/main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <h1>Book Store Ecommerce</h1>
+        <input type="text" id="searchQuery" placeholder="Search for books..." />
+        <button id="searchButton">Search</button>
+      </div>
+    </header>
+    <main>
+      <nav class="filters-navbar">
+        <select id="authorFilter">
+          <option value="">Select Author</option>
+          {% for author in authors %}
+          <option value="{{ author }}">{{ author }}</option>
+          {% endfor %}
+        </select>
+        <select id="publisherFilter">
+          <option value="">Select Publisher</option>
+          {% for publisher in publishers %}
+          <option value="{{ publisher }}">{{ publisher }}</option>
+          {% endfor %}
+        </select>
+        <select id="yearFilter">
+          <option value="">Select Year</option>
+          {% for year in years %}
+          <option value="{{ year }}">{{ year }}</option>
+          {% endfor %}
+        </select>
+      </nav>
+      <div id="error-message" style="display: none; color: red"></div>
+      <section id="results" class="results-grid"></section>
+    </main>
+    <script src="/static/js/main.js"></script>
+  </body>
+</html>
