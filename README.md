@@ -6,6 +6,14 @@ This project implements a semantic search engine for a book store ecommerce. Use
 
 ---
 
+##Demo video link
+
+```
+https://drive.google.com/file/d/1IV_xZEEstuURjuYbm-wHqZ_x06INc3RH/view?usp=sharing
+```
+
+---
+
 ## Setup and Installation
 
 ### Installation Steps
